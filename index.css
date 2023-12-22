@@ -16,10 +16,15 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* margin: 0 5%; */
-    padding: 2% 5%;
+    /* padding: 2% 5%; */
+    padding-top: 2%;
+    padding-left: 30px;
     font-weight: 900;
 }
 
@@ -89,13 +94,21 @@ a {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    text-align: center;
     padding: 3.5em 0;
+    /* text-align: center; */
     color: white;
 }
 
 .component {
-
+    text-align: center;
 }
 
-.
+.number {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
