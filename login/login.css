@@ -10,7 +10,7 @@ a {
 }
 
 .container {
-    background-image: url("./images/loginbg.jpg");
+    background-image: url("../images/loginbg.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -115,7 +115,8 @@ a {
     cursor: pointer;
 }
 
-.button p {
+.button a {
+    color: #262626;
     font-size: 1em;
     font-weight: 500;
 }
