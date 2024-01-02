@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.navBarContent {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(173, 66, 239, 0.416),rgba(239, 66, 164, 0.225)), url("new.jpg");
+    background-blend-mode: overlay;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(37,37,187,0.6);
+
+    /* object-fit: fill; */
+}
+
+.navbar {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-top: 1%;
+    padding-left: 30px;
+    font-weight: 900;
+    text-align: left;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    z-index: 100;
+    
+    
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left:10px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.options {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.option {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 50px;
+    color: white;
+   
+}
+
+.option:hover {
+    border-bottom: 1px solid white;
+    text-shadow: 0px 0 20px #00fffb, 0px 0 30px #0081bc;
+    
+
+}
+
+.joinStyle {
+    display: inline-block;
+    background-color: #fca2e2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.joinStyle a {
+    display: inline;
+    color: #252525;
+    /* margin-right: 5px; */
+}
+
+a{
+    text-decoration: none;
+    }
+
+.content {
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:3em;
+    color: white;
+    font-weight: bold;
+    padding-top: 5.5%;
+   
+}
+
+.icon {
+   
+    font-size: 0.5em;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+   margin-right: 45%;
+    margin-left: 45%;
+    margin-top: 2%;
+    text-align: center;
+    background-position: center;
+    border-radius: 20px;
+
+}
+
+
+
+/*deuxieme div*/
+
+.section2{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(173, 66, 239, 0.416),rgba(239, 66, 164, 0.225)), url("darker.jpg");
+    background-blend-mode: overlay;
+    height: 100vh;
+    margin-bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(37,37,187,0.6);
+
+
+    font-family:'Times New Roman', Times, serif;
+    font-size:3em;
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    font-weight: bold;
+    padding:200px;
+    padding-top: 50px;
+   
+}
+
+    
+    
+    span{
+    color: rgb(113, 0, 128);
+    
+    
+    }
+   .garena{
+   height:50%;
+   width:55.5%;
+   
+   }
+   
+/*PARTIE FLEXBOX*/
+
+
+
+   .flex-container{
+    display: flex;
+    
+    
+    justify-content: space-around;
+   
+    margin-top:5%;
+    height:200px;
+    
+
+   }
+
+   .flex-container1{
+    display: flex;
+    justify-content: space-around;
+   padding-top: 0;
+    margin-top:0;
+    height:200px;
+    
+
+   }
+   .flex-container2{
+    display: flex;
+    justify-content: space-around;
+   padding-top: 0;
+    margin-top:0;
+    height:200px;
+   
+
+   }
+
+   
+.element{
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    border-radius: 9px;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.4em;
+    color: white;
+    width: 240px;
+    height:19px;
+    padding-bottom: 70px;
+}
+
+.namecondidat{
+    font-size: 0.6em;
+    text-align: right;
+    padding-top: 45px;
+    color: rgb(238, 130, 130);
+
+}
+.namecondidat2{
+    font-size: 0.6em;
+    text-align: left;
+    padding-top: 45px;
+    color: rgb(238, 130, 130);
+
+}
+.clock{
+    font-size: 1em;
+    color:white
+}
+
+ 
+ 
+ .date{
+    font-size: 0.2em;
+ }
+
+/*DERNIERE LIGNE AVANT LE FOOTER*/
+
+ .finalline{
+    font-size: 0.6em;
+    text-transform: uppercase;
+ }
+
+
+
+/* PARTIE FOOTER*/
+
+ footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+
+}
+
+
+footer .ContactUs{
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+footer .ContactUs a{
+    color: white;
+    font-size: 21px;
+}
+
+footer .followUs{
+    display: flex;
+}
+
+footer .followUs .SM {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .followUs .SM a {
+    margin-left: 30px;
+}
+footer .followUs .SM img{
+    width:30px
+}
+
+
+
+
+
