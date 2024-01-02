@@ -1,0 +1,421 @@
+.navbar {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-top: 1%;
+    padding-left: 30px;
+    font-weight: 900;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.options {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 50px;
+    color: white;
+}
+
+.option:hover {
+    border-bottom: 1px solid white;
+    text-shadow: 0px 0 20px #00fffb, 0px 0 30px #0081bc;
+
+}
+
+.joinStyle {
+    display: inline-block;
+    background-color: #fca2e2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.joinStyle a {
+    display: inline;
+    color: #252525;
+    /* margin-right: 5px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body{
+    background-image: url("./games_images/wallpaperflare.com_wallpaper\ \(7\).jpg");
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size:50px;
+    background-image: url("./games_images/title_background.jpg");
+    background-size:cover;
+    width: 68%;
+    margin: auto;
+    padding: 10px;
+}
+
+.more {
+    display: none;
+}
+
+#viewmore:checked ~ .more{
+    display: block;
+    
+
+}
+
+#viewmore:checked ~ .viewmore{
+    display: none;
+    
+    
+}
+
+
+#viewmore {
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+
+
+.content{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);    justify-content: space-between;
+    color: white;
+    margin-bottom: -10px;
+}
+
+.content .article{
+    display: block;
+    width: 75%;
+    padding: 15px;
+}
+
+.content .article img {
+    width: 100%;
+    border-radius: 15px;
+}
+.content .article .intro{
+    font-size: 18px;
+}
+
+
+.content .article .type{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.286);
+    padding: 10px;
+}
+
+.content .article .type p {
+    margin-left: 30px;
+}
+.content .article .genres{
+    border-right: white solid 1px;
+    width: 50%;
+}
+
+.typename a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.content .article .typename{
+    display: flex;
+}
+
+.content .article .offre{
+    display: flex;
+    margin-top: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.136);
+}
+
+.content .article .offrecontent{
+    width:80%;
+}
+
+
+
+
+.content .article .button{
+    border: white solid 2px;
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .article .button a {
+    color: white; /* Set the color you want for the link */
+}
+
+.viewmore {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(50, 49, 49);
+    margin: auto;
+    cursor: pointer;
+}
+
+
+
+
+.aside{
+    padding: 20px;
+}
+.aside img {
+    width: 300px;
+}
+
+.aside .price {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.price div{
+    display: inline-flex;
+    width: 60px;
+    font-size: 18px;
+
+}
+
+.aside p{
+    font-size: 14px;
+}
+.percentage{
+    padding-left: 10px;
+    border:#0065ff solid 2px;
+    background-color: #0065ff;
+    border-radius: 5px;
+    margin-right: 5px;
+    
+}
+
+.buy , .AddToCart{
+    width: 80%;
+    border:#0065ff solid 2px;
+    background-color: #0065ff;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.aside div a {
+    color: white;
+}
+
+.wishlist{
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+}
+.wishlist a {
+    color: white;
+    font-size: 18px;
+}
+.wishlist img {
+    width: 30px;
+}
+
+.aside .details{
+    display: block;
+
+}
+
+.aside .details .dt{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.aside .details .dt img {
+    width: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aside .button{
+    border: white solid 2px;
+    border-radius: 15px;
+    height: auto;
+    width: 120px;
+    display: flex;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aside .button a {
+    color: white; /* Set the color you want for the link */
+}
+
+.aside .button img {
+    width: 20px;
+    height: 20px;
+}
+
+hr{
+    width: 100%;
+    color: white;
+    padding: auto;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);    justify-content: space-between;
+}
+
+
+
+
+.requirement{
+    display: block;
+    width: 70%;
+    margin: auto;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);    
+    justify-content: space-between;
+    color: white;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin-bottom: 100px;
+}
+
+
+.requirement .title {
+    margin: auto;
+    width:60%
+}
+.content2{
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    background-color: rgba(55, 55, 55, 0.479);
+
+}
+
+.content2 hr {
+    width: 95%;
+    height: 0px;
+    border: none;
+    border-top: 0.1px solid white;
+}
+
+.content2 .line {
+    display: flex;
+    justify-content:space-between
+}
+
+.content2 .line div {
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.content2 .line .right{
+    width: 45%;
+}
+
+.content2 .line h3 {
+    margin-top: 10px;
+    padding: 10px;
+} 
+
+.content2 .line p{
+    text-align: left;
+    margin-top: -15px;
+}
+
+.content2 .line .header {
+    color: #b5b0b0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+
+}
+
+
+footer .ContactUs{
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+footer .ContactUs a{
+    color: white;
+    font-size: 21px;
+}
+
+footer .followUs{
+    display: flex;
+}
+
+footer .followUs .SM {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .followUs .SM a {
+    margin-left: 30px;
+}
+footer .followUs .SM img{
+    width:30px
+}
